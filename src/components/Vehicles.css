@@ -1,0 +1,140 @@
+.vehicles-section {
+  background: #ffffff;
+  border-top: 1px solid var(--border-color-light);
+  position: relative;
+}
+
+.vehicles-grid {
+  gap: 1.25rem;
+}
+
+.vehicle-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 1.5rem;
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.03);
+  transition: var(--transition-normal);
+}
+
+.vehicle-card:hover {
+  border-color: #93c5fd;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px -5px rgba(29, 78, 216, 0.12);
+}
+
+.vehicle-card-active {
+  border-color: var(--primary-blue);
+  background: #f0f7ff;
+  box-shadow: 0 0 25px rgba(37, 99, 235, 0.2);
+}
+
+.vehicle-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.brand-logo-emblem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brand-icon {
+  color: var(--primary-blue);
+}
+
+.brand-logo-name {
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  color: var(--text-primary);
+}
+
+.brand-badge {
+  font-size: 0.7rem;
+  padding: 0.15rem 0.55rem;
+}
+
+.brand-title {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.popular-models {
+  margin-bottom: 1.25rem;
+  flex: 1;
+}
+
+.models-label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.models-list {
+  font-size: 0.825rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.vehicle-card-footer {
+  margin-top: 0.5rem;
+}
+
+.vehicles-footer-banner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+  background: #eff6ff;
+  border: 1.5px solid #bfdbfe;
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 2rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .vehicles-footer-banner {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+.banner-icon-box {
+  width: 52px;
+  height: 52px;
+  background: #ffffff;
+  border: 1px solid #bfdbfe;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.banner-text {
+  flex: 1;
+}
+
+.banner-text h4 {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.banner-text p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}

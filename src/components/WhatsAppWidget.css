@@ -1,0 +1,151 @@
+.wa-widget-container {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 1500;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.wa-trigger-btn {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #25d366;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+  transition: var(--transition-normal);
+  position: relative;
+}
+
+.wa-trigger-btn:hover {
+  transform: scale(1.08);
+  background: #20ba5a;
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+}
+
+.wa-badge-pulse {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 14px;
+  height: 14px;
+  background: #2563eb;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+.wa-popup-card {
+  width: 320px;
+  background: #ffffff;
+  border: 1.5px solid #86efac;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15);
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.wa-popup-header {
+  background: #0f172a;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid #1e293b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wa-avatar-group {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.wa-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #25d366;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wa-avatar-group strong {
+  display: block;
+  font-size: 0.825rem;
+  color: #ffffff;
+}
+
+.wa-status-text {
+  display: block;
+  font-size: 0.7rem;
+  color: #4ade80;
+}
+
+.wa-close-btn {
+  color: #94a3b8;
+}
+
+.wa-close-btn:hover {
+  color: #ffffff;
+}
+
+.wa-popup-body {
+  padding: 1rem;
+  background: #f8fafc;
+  min-height: 90px;
+}
+
+.wa-chat-bubble {
+  background: #ffffff;
+  color: var(--text-primary);
+  padding: 0.75rem 0.85rem;
+  border-radius: var(--radius-md);
+  font-size: 0.825rem;
+  line-height: 1.45;
+  border-left: 3px solid #25d366;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+}
+
+.wa-popup-footer {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem;
+  background: #ffffff;
+  border-top: 1px solid #e2e8f0;
+  gap: 0.5rem;
+}
+
+.wa-input {
+  flex: 1;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: var(--radius-md);
+  padding: 0.5rem 0.75rem;
+  font-size: 0.825rem;
+  color: var(--text-primary);
+  outline: none;
+}
+
+.wa-send-btn {
+  width: 36px;
+  height: 36px;
+  background: #25d366;
+  color: #ffffff;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-fast);
+}
+
+.wa-send-btn:hover {
+  background: #20ba5a;
+}
