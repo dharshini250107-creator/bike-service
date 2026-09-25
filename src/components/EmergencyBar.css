@@ -1,16 +1,16 @@
 .emergency-section {
-  padding: 2.5rem 0;
+  padding: 3rem 0;
   background: var(--bg-main);
 }
 
 .emergency-card {
   background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
-  border: 1px solid #3b82f6;
+  border: 1.5px solid #3b82f6;
   border-radius: var(--radius-lg);
-  padding: 2rem 2.5rem;
+  padding: 2.25rem 2.75rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.75rem;
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 12px 35px rgba(29, 78, 216, 0.3);
@@ -26,14 +26,14 @@
 .emergency-left {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1.5rem;
 }
 
 .emergency-icon-box {
   width: 58px;
   height: 58px;
   background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -56,12 +56,14 @@
 .emergency-text h3 {
   font-size: 1.35rem;
   color: #ffffff;
-  margin: 0.2rem 0;
+  margin: 0.25rem 0;
+  line-height: 1.25;
 }
 
 .emergency-text p {
   font-size: 0.875rem;
   color: #dbeafe;
+  line-height: 1.5;
 }
 
 .emergency-right {
@@ -72,6 +74,8 @@
   background: #ffffff;
   color: var(--primary-blue-dark);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  font-weight: 800;
+  white-space: nowrap;
 }
 
 .emergency-right .btn-primary:hover {

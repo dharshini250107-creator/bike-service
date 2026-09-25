@@ -5,7 +5,8 @@
 }
 
 .testimonials-grid {
-  gap: 1.5rem;
+  gap: 1.75rem;
+  align-items: stretch;
 }
 
 .testimonial-card {
@@ -13,9 +14,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
   padding: 2rem;
   background: #ffffff;
-  border: 1.5px solid #e2e8f0;
+  border: 1.5px solid #cbd5e1;
   border-radius: var(--radius-lg);
   box-shadow: 0 8px 20px -5px rgba(30, 58, 138, 0.05);
   transition: var(--transition-normal);
@@ -32,6 +34,7 @@
   top: 20px;
   right: 20px;
   color: #e0f2fe;
+  pointer-events: none;
 }
 
 .testimonial-top {
@@ -44,6 +47,7 @@
 .stars-row {
   display: flex;
   gap: 0.2rem;
+  align-items: center;
 }
 
 .review-date {
@@ -53,13 +57,14 @@
 }
 
 .review-comment {
-  font-size: 0.975rem;
+  font-size: 0.95rem;
   color: var(--text-primary);
-  line-height: 1.6;
+  line-height: 1.65;
   margin-bottom: 1.5rem;
   font-style: italic;
   position: relative;
   z-index: 2;
+  flex: 1;
 }
 
 .reviewer-info {
@@ -67,7 +72,8 @@
   align-items: center;
   gap: 0.85rem;
   padding-top: 1rem;
-  border-top: 1px solid #e2e8f0;
+  border-top: 1.5px solid #e2e8f0;
+  margin-top: auto;
 }
 
 .avatar-circle {
@@ -83,6 +89,7 @@
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 10px rgba(29, 78, 216, 0.25);
+  flex-shrink: 0;
 }
 
 .reviewer-details {
@@ -98,6 +105,7 @@
 
 .reviewer-name {
   font-size: 0.95rem;
+  font-weight: 700;
   color: var(--text-primary);
 }
 
@@ -109,12 +117,14 @@
   font-weight: 700;
   color: #15803d;
   background: #dcfce7;
-  padding: 0.15rem 0.5rem;
+  padding: 0.15rem 0.55rem;
   border-radius: var(--radius-full);
   border: 1px solid #86efac;
+  white-space: nowrap;
 }
 
 .reviewer-bike {
   font-size: 0.8rem;
   color: var(--text-secondary);
+  margin-top: 0.1rem;
 }

@@ -20,6 +20,7 @@
   box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
   transition: var(--transition-normal);
   position: relative;
+  cursor: pointer;
 }
 
 .wa-trigger-btn:hover {
@@ -40,11 +41,11 @@
 }
 
 .wa-popup-card {
-  width: 320px;
+  width: 330px;
   background: #ffffff;
   border: 1.5px solid #86efac;
   border-radius: var(--radius-lg);
-  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.18);
   margin-bottom: 1rem;
   overflow: hidden;
 }
@@ -65,8 +66,8 @@
 }
 
 .wa-avatar {
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   background: #25d366;
   color: #ffffff;
@@ -75,12 +76,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .wa-avatar-group strong {
   display: block;
   font-size: 0.825rem;
   color: #ffffff;
+  line-height: 1.2;
 }
 
 .wa-status-text {
@@ -91,6 +94,8 @@
 
 .wa-close-btn {
   color: #94a3b8;
+  cursor: pointer;
+  transition: var(--transition-fast);
 }
 
 .wa-close-btn:hover {
@@ -109,8 +114,8 @@
   padding: 0.75rem 0.85rem;
   border-radius: var(--radius-md);
   font-size: 0.825rem;
-  line-height: 1.45;
-  border-left: 3px solid #25d366;
+  line-height: 1.5;
+  border-left: 3.5px solid #25d366;
   box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
 }
 
@@ -126,9 +131,9 @@
 .wa-input {
   flex: 1;
   background: #f1f5f9;
-  border: 1px solid #cbd5e1;
+  border: 1.5px solid #cbd5e1;
   border-radius: var(--radius-md);
-  padding: 0.5rem 0.75rem;
+  padding: 0.55rem 0.75rem;
   font-size: 0.825rem;
   color: var(--text-primary);
   outline: none;
@@ -144,6 +149,8 @@
   align-items: center;
   justify-content: center;
   transition: var(--transition-fast);
+  cursor: pointer;
+  flex-shrink: 0;
 }
 
 .wa-send-btn:hover {

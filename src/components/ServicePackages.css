@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
   padding: 2.25rem 1.75rem 1.75rem;
   position: relative;
   background: #ffffff;
@@ -32,7 +33,7 @@
   border: 2px solid var(--primary-blue);
   background: linear-gradient(170deg, #f0f7ff 0%, #ffffff 100%);
   box-shadow: 0 15px 35px -5px rgba(29, 78, 216, 0.2);
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 @media (max-width: 991px) {
@@ -42,7 +43,7 @@
 }
 
 .package-popular:hover {
-  transform: scale(1.04);
+  transform: scale(1.03);
 }
 
 .popular-ribbon {
@@ -62,6 +63,7 @@
   align-items: center;
   gap: 0.35rem;
   box-shadow: 0 4px 15px rgba(29, 78, 216, 0.4);
+  white-space: nowrap;
 }
 
 .package-top {
@@ -84,6 +86,7 @@
   font-size: 1.5rem;
   color: var(--text-primary);
   margin-bottom: 0.85rem;
+  line-height: 1.25;
 }
 
 .pkg-pricing {
@@ -149,11 +152,17 @@
   gap: 0.6rem;
   font-size: 0.875rem;
   color: var(--text-secondary);
-  line-height: 1.4;
+  line-height: 1.45;
 }
 
 .pkg-check-icon {
   color: var(--accent-green);
   flex-shrink: 0;
   margin-top: 2px;
+}
+
+.pkg-footer {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
 }
