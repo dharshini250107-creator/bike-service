@@ -83,13 +83,15 @@ export default function Services({ onSelectService }) {
             const IconComponent = iconMap[service.icon] || Wrench;
             return (
               <div key={service.id} className="glass-card service-card">
-                {/* Header row: Service Visual Image Badge, Icon & time badge */}
+                {/* Header row: Service Visual & time badge */}
                 <div className="service-card-top">
                   <div className="service-card-brand-group">
-                    <ServiceVisual serviceId={service.id} title={service.title} iconName={service.icon} />
-                    <div className="service-icon-box">
-                      <IconComponent size={20} className="service-icon" />
-                    </div>
+                    <ServiceVisual
+                      serviceId={service.id}
+                      title={service.title}
+                      iconName={service.icon}
+                      IconComponent={IconComponent}
+                    />
                   </div>
                   <span className="service-time-badge">
                     <Clock size={12} /> {service.time}

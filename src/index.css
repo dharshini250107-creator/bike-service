@@ -1,63 +1,82 @@
 /* ==========================================================================
-   APEX MOTO PRO - PREMIUM LIGHT BLUE & MEDIUM BLUE DESIGN SYSTEM
+   APEX MOTO PRO - PREMIUM FORMAL AUTOMOTIVE DESIGN SYSTEM
+   Clean White / Light Blue Automotive Palette with Dark Navy & Royal Blue Accents
    ========================================================================== */
 
 :root {
-  /* Core Background Colors */
-  --bg-main: #f4f8ff;          /* Very Light Blue base background */
-  --bg-card: #ffffff;          /* Pure White Card background */
-  --bg-card-hover: #f8fafc;    /* Light Slate Card hover background */
-  --bg-surface: #eff6ff;       /* Light Blue surface background */
-  --bg-surface-accent: #e0f2fe;/* Light sky blue highlight background */
-  --bg-glass: rgba(255, 255, 255, 0.92);
+  /* Core Light & Clean Background Colors */
+  --bg-main: #ffffff;             /* Pure Clean White Main Background */
+  --bg-secondary: #f8fafc;        /* Soft Slate / Ice Grey Secondary Background */
+  --bg-card: #ffffff;             /* Pure White Card Background */
+  --bg-card-hover: #ffffff;       /* Pure White Card Background on Hover */
+  --bg-surface: #f1f5f9;          /* Light Slate Surface */
+  --bg-surface-accent: #eff6ff;   /* Soft Light Blue Highlight Background */
+  --bg-glass: rgba(255, 255, 255, 0.96);
 
-  /* Primary & Accent Blue Palette */
-  --primary-blue: #1d4ed8;       /* Medium Blue (Primary action & brand) */
-  --primary-blue-dark: #1e40af;  /* Deep Medium Blue */
-  --primary-blue-light: #3b82f6; /* Soft Blue accent */
-  --primary-gradient: linear-gradient(135deg, #1d4ed8 0%, #2563eb 50%, #0284c7 100%);
-  --secondary-blue: #0284c7;     /* Sky / Ocean Blue */
-  --light-blue: #e0f2fe;         /* Light Blue Tint */
-  --light-blue-soft: #f0f7ff;    /* Softest Light Blue Tint */
-  --accent-soft-blue: #93c5fd;
+  /* Professional Automotive Blue Palette */
+  --primary-blue: #2563eb;        /* Royal Blue Accent */
+  --primary-blue-dark: #1d4ed8;   /* Deep Automotive Blue */
+  --primary-blue-light: #3b82f6;  /* Vibrant Accent Blue */
+  --primary-gradient: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  --secondary-blue: #1e40af;      /* Rich Deep Blue */
+  --light-blue: #eff6ff;          /* Soft Light Blue Highlight Tint */
+  --light-blue-soft: #f0f7ff;
+  --accent-soft-blue: #60a5fa;
+
+  /* Global Compatibility Mappings (Replaces all Gold & Orange) */
+  --primary-gold: #2563eb;
+  --primary-gold-dark: #1d4ed8;
+  --primary-gold-light: #3b82f6;
+  --secondary-gold: #1e40af;
+  --light-gold: #eff6ff;
+  --light-gold-soft: #f0f7ff;
+  --accent-soft-gold: #60a5fa;
+
+  --primary-orange: #2563eb;
+  --primary-orange-dark: #1d4ed8;
+  --primary-orange-light: #3b82f6;
 
   /* Helper Status Colors */
-  --accent-gold: #d97706;        /* Warm Amber Gold for ratings */
-  --accent-green: #16a34a;       /* Emerald Green for verified/whatsapp */
+  --accent-gold: #f59e0b;         /* Standard Review Rating Gold Star */
+  --accent-green: #16a34a;        /* Trust Mint Emerald */
   --accent-blue: #2563eb;
 
   /* Glows, Shadows & Borders */
-  --blue-glow: rgba(37, 99, 235, 0.18);
-  --blue-glow-strong: rgba(29, 78, 216, 0.35);
-  --border-color: #cbd5e1;       /* Soft slate border */
-  --border-color-light: #e2e8f0; /* Ultra soft border */
-  --border-color-hover: #3b82f6; /* Blue hover border */
+  --blue-glow: rgba(37, 99, 235, 0.15);
+  --blue-glow-strong: rgba(37, 99, 235, 0.3);
+  --gold-glow: rgba(37, 99, 235, 0.2);
+  --gold-glow-strong: rgba(37, 99, 235, 0.35);
+
+  --border-color: #e2e8f0;        /* Subtle Light Border */
+  --border-color-light: #cbd5e1;  /* Soft Slate Border */
+  --border-color-hover: #2563eb;  /* Blue Hover Border Highlight */
 
   /* Text Colors */
-  --text-primary: #0f172a;       /* Dark Navy / Charcoal */
-  --text-secondary: #334155;     /* Slate Body Text */
+  --navy-heading: #0f172a;       /* Dark Navy for Headings & Titles */
+  --text-primary: #0f172a;       /* Crisp Dark Navy / Deep Slate Primary Text */
+  --text-secondary: #475569;     /* Slate Grey Body Text */
   --text-muted: #64748b;         /* Muted Slate Text */
   --text-white: #ffffff;
 
   /* Typography */
-  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
   /* Spacing & Radius */
   --radius-sm: 8px;
   --radius-md: 12px;
-  --radius-lg: 18px;
+  --radius-lg: 16px;
   --radius-full: 9999px;
 
-  /* Transitions & Shadows */
+  /* Transitions & Premium Shadows */
   --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-normal: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   
   --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.04);
-  --shadow-card: 0 10px 25px -5px rgba(30, 58, 138, 0.07), 0 4px 6px -2px rgba(30, 58, 138, 0.03);
-  --shadow-hover: 0 20px 35px -10px rgba(29, 78, 216, 0.15), 0 8px 12px -4px rgba(29, 78, 216, 0.08);
-  --shadow-glow: 0 0 25px rgba(37, 99, 235, 0.25);
+  --shadow-card: 0 4px 20px -2px rgba(15, 23, 42, 0.05), 0 2px 6px -1px rgba(15, 23, 42, 0.03);
+  --shadow-hover: 0 12px 28px -5px rgba(37, 99, 235, 0.18), 0 0 0 2px rgba(37, 99, 235, 0.15);
+  --shadow-glow: 0 0 25px rgba(37, 99, 235, 0.22);
 }
 
 /* Reset & Base Styles */
@@ -70,6 +89,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  background-color: var(--bg-main);
 }
 
 body {
@@ -95,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: 700;
   line-height: 1.25;
-  color: var(--text-primary);
+  color: var(--navy-heading);
   letter-spacing: -0.02em;
 }
 
@@ -115,6 +135,15 @@ button {
 input, select, textarea {
   font-family: var(--font-body);
   color: var(--text-primary);
+  background: #ffffff;
+  border: 1.5px solid var(--border-color-light);
+  border-radius: var(--radius-md);
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.18);
 }
 
 /* Scrollbar styling */
@@ -123,11 +152,11 @@ input, select, textarea {
 }
 
 ::-webkit-scrollbar-track {
-  background: #e2e8f0;
+  background: #f1f5f9;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #93c5fd;
+  background: #cbd5e1;
   border-radius: 4px;
 }
 
@@ -144,8 +173,9 @@ input, select, textarea {
 }
 
 .section {
-  padding: 5.5rem 0;
+  padding: 5rem 0;
   position: relative;
+  background-color: var(--bg-main);
 }
 
 .gradient-text {
@@ -170,40 +200,42 @@ input, select, textarea {
   white-space: nowrap;
 }
 
-.badge-blue {
-  background: #e0f2fe;
+.badge-blue,
+.badge-orange,
+.badge-cyan,
+.badge-gold {
+  background: #eff6ff;
   color: #1d4ed8;
-  border: 1px solid #93c5fd;
+  border: 1.5px solid #bfdbfe;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.08);
 }
 
-.badge-light-blue {
-  background: #f0f9ff;
-  color: #0284c7;
-  border: 1px solid #bae6fd;
+.badge-light-blue,
+.badge-light-orange,
+.badge-light-gold {
+  background: #f0f7ff;
+  color: #2563eb;
+  border: 1px solid #dbeafe;
 }
 
 .badge-navy {
-  background: #f1f5f9;
-  color: #0f172a;
-  border: 1px solid #cbd5e1;
+  background: #0f172a;
+  color: #ffffff;
+  border: 1px solid #1e293b;
 }
 
 .badge-green {
-  background: #dcfce7;
-  color: #15803d;
+  background: #f0fdf4;
+  color: #16a34a;
   border: 1px solid #86efac;
 }
 
-.badge-gold {
-  background: #fef3c7;
-  color: #b45309;
-  border: 1px solid #fde68a;
-}
-
 /* Color Helper Utility Classes */
-.text-blue { color: var(--primary-blue) !important; }
-.text-navy { color: var(--text-primary) !important; }
-.text-gold { color: var(--accent-gold) !important; }
+.text-blue,
+.text-orange,
+.text-cyan,
+.text-gold { color: #2563eb !important; }
+.text-navy { color: var(--navy-heading) !important; }
 .text-green { color: var(--accent-green) !important; }
 .text-muted { color: var(--text-muted) !important; }
 .text-white { color: #ffffff !important; }
@@ -230,56 +262,71 @@ input, select, textarea {
 .btn-primary {
   background: var(--primary-gradient);
   color: #ffffff;
-  box-shadow: 0 4px 16px rgba(29, 78, 216, 0.3);
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.28);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  background: linear-gradient(135deg, #1e40af 0%, #1d4ed8 100%);
-  box-shadow: 0 8px 24px rgba(29, 78, 216, 0.42);
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.38);
+  color: #ffffff;
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
 }
 
 .btn-secondary {
   background: #ffffff;
-  color: var(--primary-blue);
-  border: 1.5px solid #93c5fd;
+  color: #2563eb;
+  border: 1.5px solid #bfdbfe;
   box-shadow: var(--shadow-sm);
 }
 
 .btn-secondary:hover {
   background: #eff6ff;
-  border-color: var(--primary-blue-light);
-  color: var(--primary-blue-dark);
+  border-color: #2563eb;
+  color: #1d4ed8;
   transform: translateY(-2px);
-  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.15);
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.15);
 }
 
-.btn-outline-blue {
+.btn-secondary:active {
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.btn-outline-blue,
+.btn-outline-orange,
+.btn-outline-gold {
   background: transparent;
-  color: var(--primary-blue);
-  border: 1.5px solid var(--primary-blue);
+  color: #2563eb;
+  border: 1.5px solid #2563eb;
 }
 
-.btn-outline-blue:hover {
+.btn-outline-blue:hover,
+.btn-outline-orange:hover,
+.btn-outline-gold:hover {
   background: #eff6ff;
-  border-color: var(--primary-blue-dark);
-  color: var(--primary-blue-dark);
-  box-shadow: 0 0 15px rgba(37, 99, 235, 0.2);
+  border-color: #1d4ed8;
+  color: #1d4ed8;
+  box-shadow: 0 0 16px rgba(37, 99, 235, 0.2);
   transform: translateY(-2px);
 }
 
 .btn-whatsapp {
-  background: #25d366;
+  background: #16a34a;
   color: #ffffff;
   font-weight: 700;
-  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+  box-shadow: 0 4px 15px rgba(22, 163, 74, 0.25);
 }
 
 .btn-whatsapp:hover {
-  background: #20ba5a;
+  background: #15803d;
   color: #ffffff;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+  box-shadow: 0 6px 20px rgba(22, 163, 74, 0.38);
 }
 
 .btn-sm {
@@ -292,10 +339,10 @@ input, select, textarea {
   font-size: 1rem;
 }
 
-/* Glassmorphism & Premium Cards */
+/* Premium Cards */
 .glass-card {
   background: var(--bg-card);
-  border: 1.5px solid var(--border-color-light);
+  border: 1.5px solid var(--border-color);
   border-radius: var(--radius-lg);
   padding: 1.75rem;
   transition: var(--transition-normal);
@@ -305,9 +352,13 @@ input, select, textarea {
 
 .glass-card:hover {
   border-color: var(--border-color-hover);
-  background: var(--bg-card);
+  background: var(--bg-card-hover);
   transform: translateY(-4px);
   box-shadow: var(--shadow-hover);
+}
+
+.glass-card:active {
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2), var(--shadow-hover);
 }
 
 /* Section Header Component */
@@ -327,7 +378,7 @@ input, select, textarea {
 .section-title {
   font-size: 2.25rem;
   margin-top: 0.6rem;
-  color: var(--text-primary);
+  color: var(--navy-heading);
   line-height: 1.25;
 }
 
@@ -337,13 +388,13 @@ input, select, textarea {
   }
 }
 
-/* Animations */
+/* Subtle Micro-Animations */
 @keyframes pulseBlueGlow {
   0%, 100% {
-    box-shadow: 0 0 15px rgba(37, 99, 235, 0.3);
+    box-shadow: 0 0 10px rgba(37, 99, 235, 0.2);
   }
   50% {
-    box-shadow: 0 0 28px rgba(29, 78, 216, 0.6);
+    box-shadow: 0 0 22px rgba(37, 99, 235, 0.45);
   }
 }
 
@@ -352,7 +403,7 @@ input, select, textarea {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-6px);
+    transform: translateY(-5px);
   }
 }
 
@@ -360,7 +411,10 @@ input, select, textarea {
   animation: floatAnim 4s ease-in-out infinite;
 }
 
-.pulse-blue {
+.pulse-blue,
+.pulse-orange,
+.pulse-cyan,
+.pulse-gold {
   animation: pulseBlueGlow 2.5s infinite;
 }
 

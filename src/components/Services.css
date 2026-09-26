@@ -1,6 +1,6 @@
 .services-section {
-  background: #eff6ff; /* Soft light blue background section */
-  border-top: 1px solid #bfdbfe;
+  background: #ffffff;
+  border-top: 1px solid #e2e8f0;
   position: relative;
 }
 
@@ -25,7 +25,7 @@
   align-items: center;
   gap: 0.5rem;
   flex-wrap: wrap;
-  background: #ffffff;
+  background: #f1f5f9;
   padding: 0.35rem;
   border-radius: var(--radius-md);
   border: 1.5px solid #cbd5e1;
@@ -36,21 +36,21 @@
   padding: 0.55rem 1.15rem;
   font-size: 0.85rem;
   font-weight: 700;
-  color: var(--text-secondary);
+  color: #475569;
   border-radius: var(--radius-sm);
   transition: var(--transition-fast);
   white-space: nowrap;
 }
 
 .tab-btn:hover {
-  color: var(--primary-blue);
-  background: #f1f5f9;
+  color: #1d4ed8;
+  background: #e0f2fe;
 }
 
 .tab-btn.tab-active {
   background: var(--primary-gradient);
   color: #ffffff;
-  box-shadow: 0 4px 12px rgba(29, 78, 216, 0.3);
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
 }
 
 .service-search-box {
@@ -67,8 +67,8 @@
 }
 
 .service-search-box:focus-within {
-  border-color: var(--primary-blue);
-  box-shadow: 0 0 12px rgba(37, 99, 235, 0.2);
+  border-color: #2563eb;
+  box-shadow: 0 0 14px rgba(37, 99, 235, 0.18);
 }
 
 .search-box-icon {
@@ -82,7 +82,7 @@
   border: none;
   outline: none;
   font-size: 0.875rem;
-  color: var(--text-primary);
+  color: #0f172a;
   width: 100%;
 }
 
@@ -98,16 +98,17 @@
   height: 100%;
   padding: 1.75rem;
   background: #ffffff;
-  border: 1.5px solid #cbd5e1;
+  border: 1.5px solid #e2e8f0;
   border-radius: var(--radius-lg);
-  box-shadow: 0 8px 20px -5px rgba(30, 58, 138, 0.06);
+  box-shadow: var(--shadow-card);
   transition: var(--transition-normal);
 }
 
 .service-card:hover {
-  border-color: #93c5fd;
-  box-shadow: 0 15px 30px -5px rgba(29, 78, 216, 0.15);
+  border-color: #2563eb;
+  box-shadow: var(--shadow-hover);
   transform: translateY(-4px);
+  background: #ffffff;
 }
 
 .service-card-top {
@@ -123,48 +124,74 @@
   gap: 0.75rem;
 }
 
-/* Service Visual Image Badge */
-.service-visual-badge {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: #eff6ff;
-  border: 1.5px solid #bfdbfe;
-  padding: 0.35rem 0.65rem 0.35rem 0.35rem;
-  border-radius: var(--radius-md);
-  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.08);
-}
-
-.service-svg-art {
-  width: 36px;
-  height: 36px;
+/* Compact Service Visual Area */
+.service-visual-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 58px;
+  height: 58px;
   flex-shrink: 0;
-  filter: drop-shadow(0 2px 4px rgba(29, 78, 216, 0.2));
 }
 
-.visual-mini-label {
-  font-size: 0.725rem;
-  font-weight: 800;
-  letter-spacing: 0.03em;
-  color: var(--primary-blue-dark);
-  text-transform: uppercase;
-  white-space: nowrap;
+.service-visual-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #f8fafc;
+  border: 1.5px solid #bfdbfe;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+  transition: all 0.3s ease;
 }
 
-.service-icon-box {
-  width: 38px;
-  height: 38px;
+.service-card:hover .service-visual-frame {
+  border-color: #2563eb;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
+}
+
+.service-visual-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-card:hover .service-visual-img {
+  transform: scale(1.08);
+}
+
+.service-visual-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(37, 99, 235, 0.02) 0%, rgba(255, 255, 255, 0.2) 100%);
+  pointer-events: none;
+}
+
+.service-visual-icon-badge {
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  width: 22px;
+  height: 22px;
   background: #ffffff;
-  border: 1.5px solid #cbd5e1;
-  border-radius: var(--radius-md);
+  border: 1.5px solid #2563eb;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
+  color: #2563eb;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.1);
+  transition: all 0.3s ease;
+  z-index: 2;
 }
 
-.service-icon {
-  color: var(--primary-blue);
+.service-card:hover .service-visual-icon-badge {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #1d4ed8;
+  transform: scale(1.1);
 }
 
 .service-time-badge {
@@ -173,9 +200,9 @@
   gap: 0.35rem;
   font-size: 0.775rem;
   font-weight: 600;
-  color: var(--text-secondary);
-  background: #f1f5f9;
-  border: 1px solid #cbd5e1;
+  color: #1d4ed8;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
   padding: 0.25rem 0.65rem;
   border-radius: var(--radius-full);
   white-space: nowrap;
@@ -183,14 +210,14 @@
 
 .service-card-title {
   font-size: 1.25rem;
-  color: var(--text-primary);
+  color: #0f172a;
   margin-bottom: 0.5rem;
   line-height: 1.3;
 }
 
 .service-card-desc {
   font-size: 0.875rem;
-  color: var(--text-secondary);
+  color: #475569;
   margin-bottom: 1.25rem;
   line-height: 1.6;
 }
@@ -212,19 +239,19 @@
   gap: 0.55rem;
   font-size: 0.825rem;
   font-weight: 500;
-  color: var(--text-primary);
+  color: #1e293b;
   line-height: 1.4;
 }
 
 .inc-check {
-  color: var(--accent-green);
+  color: #16a34a;
   flex-shrink: 0;
   margin-top: 2px;
 }
 
 .inc-more {
   font-size: 0.775rem;
-  color: var(--primary-blue);
+  color: #2563eb;
   font-weight: 700;
   margin-top: 0.2rem;
 }
@@ -248,7 +275,7 @@
   font-family: var(--font-heading);
   font-size: 1.4rem;
   font-weight: 900;
-  color: var(--primary-blue-dark);
+  color: #1d4ed8;
 }
 
 .original-price {

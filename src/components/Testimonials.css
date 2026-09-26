@@ -1,6 +1,6 @@
 .testimonials-section {
   background: #ffffff;
-  border-top: 1px solid var(--border-color-light);
+  border-top: 1px solid #e2e8f0;
   position: relative;
 }
 
@@ -19,13 +19,13 @@
   background: #ffffff;
   border: 1.5px solid #cbd5e1;
   border-radius: var(--radius-lg);
-  box-shadow: 0 8px 20px -5px rgba(30, 58, 138, 0.05);
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
   transition: var(--transition-normal);
 }
 
 .testimonial-card:hover {
-  border-color: #93c5fd;
-  box-shadow: 0 15px 30px -5px rgba(29, 78, 216, 0.12);
+  border-color: #2563eb;
+  box-shadow: 0 12px 28px -5px rgba(37, 99, 235, 0.18), 0 0 0 2px rgba(37, 99, 235, 0.15);
   transform: translateY(-4px);
 }
 
@@ -58,7 +58,7 @@
 
 .review-comment {
   font-size: 0.95rem;
-  color: var(--text-primary);
+  color: #0f172a;
   line-height: 1.65;
   margin-bottom: 1.5rem;
   font-style: italic;
@@ -88,7 +88,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 10px rgba(29, 78, 216, 0.25);
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
   flex-shrink: 0;
 }
 
@@ -106,7 +106,7 @@
 .reviewer-name {
   font-size: 0.95rem;
   font-weight: 700;
-  color: var(--text-primary);
+  color: #0f172a;
 }
 
 .verified-badge {
@@ -116,7 +116,7 @@
   font-size: 0.7rem;
   font-weight: 700;
   color: #15803d;
-  background: #dcfce7;
+  background: #f0fdf4;
   padding: 0.15rem 0.55rem;
   border-radius: var(--radius-full);
   border: 1px solid #86efac;
@@ -125,6 +125,6 @@
 
 .reviewer-bike {
   font-size: 0.8rem;
-  color: var(--text-secondary);
+  color: #475569;
   margin-top: 0.1rem;
 }

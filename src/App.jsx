@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import RunningMarquee from './components/RunningMarquee';
 import AboutUs from './components/AboutUs';
 import Services from './components/Services';
 import ServicePackages from './components/ServicePackages';
@@ -36,6 +37,9 @@ export default function App() {
 
       {/* 2. Hero Section */}
       <Hero onOpenBooking={() => handleOpenBooking()} />
+
+      {/* 2.5. Animated Running Letter Ticker Banner */}
+      <RunningMarquee />
 
       {/* 3. About Us & Core Pillars */}
       <AboutUs />
